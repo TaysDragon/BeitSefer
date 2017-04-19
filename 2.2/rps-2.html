@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors Part 2</title>
+  </head>
+  <body>
+<h1>Rock, paper, scissors</h1>
+    
+  <p>On your keyboard, select either 'r' for rock, 'p' for paper, or 's' for scissors.</p>
+
+
+
+    <p>Your score: <var id="yourVar"></var>
+      </p>
+      <p>Computer score: <var id="compVar"></var>
+      </p>
+
+    <div id="game">
+
+    </div>
+    
+
+    <script type="text/javascript">
+
+      // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+      var options = ["r", "p", "s"];
+
+      // This function is run whenever the user presses a key.
+      document.onkeyup = function(event) {
+
+        // Determines which key was pressed
+        var userGuess = event.key;
+
+        // Alerts the key the user pressed (userGuess).
+        alert(userGuess);
+
+        // Randomly chooses a choice from the options array. This is the Computer's guess.
+        var computerGuess = options[Math.floor(Math.random() * options.length)];
+
+        // Alerts the Computer's guess.
+        alert(computerGuess);
+
+        // Keep score
+        var compScore = 0
+        var userScore = 0
+
+        // Define computer wins
+        if (computerGuess === "r" && userGuess ==="p") {
+          alert(compScore+1);
+        } 
+        if (computerGuess === "r" && userGuess ==="s") {
+          alert(compScore+1);
+        } 
+
+
+        if (computerGuess === "p" && userGuess ==="s") {
+          alert(userScore+1);
+        } 
+
+        if (computerGuess === "s" && userGuess ==="p") {
+          alert(compScore+1);
+        } 
+
+        if (computerGuess === "s" && userGuess ==="p") {
+          alert(compScore+1);
+        }
+
+
+        // Define compputer lose
+
+
+        // Define tie = 0 points
+        if (computerGuess === userGuess) {
+          alert("Tie!")
+        }
+
+        //Set rules on win
+        
+
+        
+      };
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,51 @@
+/**
+ * font-family
+font-size- use 13.6 to start, then em after
+font-weight
+line-height
+ **/
+
+ body {
+  font-size: 14px;
+
+ }
+
+ h1 {
+  font-family: 'Diplomata SC', cursive;
+  font-size: 3em;
+  color: #e60073
+ }
+
+a { 
+  font-size: 40px;
+}
+
+  a::before {
+    content: "snarf";
+    color: rebeccapurple;
+  }
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+
+

@@ -1,0 +1,19 @@
+Then, visit a job site like Indeed or Dice.
+
+Search for any of the following job positions:
+
+Web Developer
+
+Frontend Web Developer
+
+Backend Developer
+
+Javascript Developer
+
+Node Developer
+
+Read the job postings for at least 10 of the listings. As you are reading, take note of at least one technology, tool, or term, with which you are unfamiliar, from each listing (e.g., Angular, API). 
+
+Then, search online for a definition or description of that technology or term. Try to understand what role it plays in the context of how web applications were described in that chapter.
+
+Open a Word or Text file and paste in your description for each of the technologies you researched. You should have a total of 10 descriptions listed.

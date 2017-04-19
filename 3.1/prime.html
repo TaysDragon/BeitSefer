@@ -1,0 +1,48 @@
+<!-- Basic starter template -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+	<title>Prime check</title>
+	</head>
+
+	<body>
+<h1>To test if a number is prime or not:</h1>
+<p id=primecheck></p>
+
+<script type="text/javascript">
+
+
+
+	
+function testPrime(n)  { 
+	  if (n % 2 === 0){
+	  	alert("not prime")
+
+	}else if (n % 3 === 0){
+	  	alert("not prime")
+
+
+	}else if (n % 5 === 0){
+	  	alert("not prime")
+
+	}else if (n % 7 === 0){
+	  	alert("not prime")
+
+	}else {
+		alert("prime")
+	}
+}
+
+ 
+
+document.getElementById("primecheck").innerHTML = testPrime(31);
+
+</script>
+
+
+
+	</body>
+	</html>

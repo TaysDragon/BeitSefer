@@ -1,0 +1,16 @@
+Instructions:
+
+For the next few moments, research amongst yourselves the answers to the following questions:
+
+What is an API?
+
+In computer programming, an application programming interface (API) is a set of subroutine definitions, protocols, and tools for building application software. ... A good API makes it easier to develop a computer program by providing all the building blocks, which are then put together by the programmer.
+
+What does API stand for?
+
+application programming interface
+
+What are some examples of APIs? (Find links to specific APIs)
+
+What do these specific APIs allow you as a developer to do?
+makes it easier to develop a computer program by providing all the building blocks, which are then put together by the programmer.

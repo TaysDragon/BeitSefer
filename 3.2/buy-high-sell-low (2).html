@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buy High Sell Low</title>
+</head>
+<body>
+<script type="text/javascript">
+var highest;
+var lowest;
+var iagStockPrices = [1.32, 1.14, 1.45, 1.20, 1.34, 1.74, 1.18, 1.90, 1.1];
+
+var biggestProfit = function(stockArray) {
+	for(var i = 0; i < stockArray.length; i ++) {
+		if(highest === undefined){
+			highest = stockArray[i];
+		}
+		else if(stockArray[i] > highest) {
+			highest = stockArray[i];
+		}	
+	};
+	console.log(highest);
+
+	// indexOf returns the value of the highest from the stockArray method
+	var highIndex = stockArray.indexOf(highest);
+	//compare highest to every other element BEFORE it.
+	for(var i = highIndex; i >= 0; i--){
+		// since lowest is undefined at the top of the page,
+		if(lowest === undefined){
+			lowest = stockArray[i];
+
+			//hold the number lower 
+		}
+		else if(stockArray[i] < lowest) {
+			lowest = stockArray[i];
+		}	
+	}
+
+	console.log(lowest);
+	console.log(highest - lowest);
+	var lowIndex = stockArray.indexOf(lowest);
+		
+	};
+
+
+  // your code goes here
+biggestProfit(iagStockPrices); // this should return 7600, because you could have bought it at 1.14 per share and then sold it at 1.90 per share. 1.90 - 1.14 = 0.76. 0.76 * 10000 is 7600.
+</script>
+</body>
+</html>
+
+
+
+

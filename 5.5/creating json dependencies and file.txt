@@ -1,0 +1,5 @@
+instructions
+
+watch video fro Fri April 7 at location 1:42-ish for instructions on creating the jason file.
+
+https://www.npmjs.com/package/inquirer

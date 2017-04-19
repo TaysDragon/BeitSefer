@@ -1,0 +1,14 @@
+Instructions:
+
+Using the starter code provided, create the missing code snippets inside the alertMovieName function necessary to capture the movie name for both the original and new buttons.
+
+Using the Starter code provided, create the missing code snippets inside the displayMovieInfo() function necessary to display JSON data about each movie.
+
+HINT: You should use HTML data- attributes.
+
+
+
+
+
+But can you imagine how much I could learn from a few hours with my tutor vs a few weeks of class?  Based on how well things went yesterday, I would be able to tackle any coding job after a week with my tutor versus months of class.  I would be able to understand the stackoverflow answers I see.  I would be able to understand the context of the answers I get from the subject matter expert.  I'm not saying I'll know everything, I never expect to know everything or anything close.  Tell me how something works, and I'll take it apart and build you anything you want from it.  I am not looking for an emotional pep-talk; I've got that covered.  I can pep-talk better than the best professional cheerleader out there.  I have no problem with ambiguity.  Ambiguity = life and I feel sorry for anyone who has not learned that lesson yet.  
+

@@ -1,0 +1,57 @@
+Instructions:
+
+Assign one student of the three of you to be the group's typist. All others in the group will help supervise, offer guidance, and help catch bugs that the group's typist might not be able to catch. Throughout this activity (and many of today's activities) you will be switching roles with those in your group.
+
+Then create a Basic To-Do application using the 1-student-do-todolist (unsolved) as a starting point. The HTML is already created for you so you will only have to fill in the javascript sections where there are large blanks. Alternatively, if you are feeling bold and capable, your group may code it from scratch without the use of the base code provided.
+
+Helpful Hint: Each of the buttons and text elements should have a dynamically created identifier or data attribute that differentiates one item on the list from another. You should use these attributes to close out the appropriate items when you click on the "X" beside them.
+
+
+
+//  ============================= START CODING BELOW! =============================================
+
+    // Create an initial toDoCount variable
+    //  On Click event associated with the add-to-do function
+    $("#add-to-do").on("click", function(event) {
+      // prevent form from submitting
+      event.preventDefault();
+
+      // Get the to-do "value" from the textbox and store it a variable
+
+
+      // Create a new variable that will hold a "<p>" tag.
+      // Then give it an ID in the following form:
+      // "item-4" or "item-3" or "item-99", where the number is equal to toDoCount.
+      // Then append the to-do "value" as text to this <p> element.
+
+
+      // Create a button with unique identifiers based on what number it is in the list. Again use jQuery to do this.
+      // Give your button a data attribute called data-to-do and a class called "checkbox".
+      // Lastly append the letter X inside.
+
+
+      // Append the button to the to do item
+
+
+      // Add the button and toDoItem to the to-dos div
+
+
+      // Clear the textbox when done
+
+
+      // Add to the toDoCount
+
+    });
+
+    //  When a user clicks a check box then delete the specific content
+    //  (NOTE: Pay attention to the unusual syntax here for the click event.
+    //  Because we are creating click events on "dynamic" content, we can't just use the usual "on" "click" syntax.)
+    $(document.body).on("click", ".checkbox", function() {
+
+      // Get the number of the button from its data attribute and hold in a variable called  toDoNumber.
+
+
+      // Select and Empty the specific <p> element that previously held the to do item number.
+
+
+    });

@@ -1,0 +1,9 @@
+Heading incorrectly labeled <h1>.
+Took out instructions.
+Added paragraph spacing into About Boo.
+Updated image link.
+Fixed logic file for list  <li>
+For colors, they were incorrectly matched.
+Grow and Shrink was missing ".
+Random boo fact was missing <!-- Linking our JavaScript file -->
+<script type="text/javascript" src="logic.js"></script> as well as " around each item.

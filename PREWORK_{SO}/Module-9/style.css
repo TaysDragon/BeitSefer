@@ -1,0 +1,53 @@
+/* background */
+body {
+    background-color: powderblue;
+}
+
+
+
+
+/* heading */
+h1 {
+    color: blue;
+    font-size: 300%;
+}
+
+
+
+/* Font styles in ID's */
+#p01 {
+    font-size: 200%;
+}
+
+#p02 {
+    font-size: 50%;
+}
+
+#p03 {
+    font-family: "Arial", Verdana, serif;
+}
+
+
+
+/* Classes */
+p.thicker {
+    font-weight: 900;
+}
+
+p.styledFont {
+	color: blue;
+    font-size: 70%;
+    font-family: "Georgia", Times, serif;
+}
+
+/* Image border in ID */
+#p04 {
+	display: block;
+    margin: auto;
+	border: 10px solid black;
+    outline-color:red;
+    outline-style: groove;
+    outline-width: 20px;
+}
+
+

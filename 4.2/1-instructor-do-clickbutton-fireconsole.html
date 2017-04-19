@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Click Button with Firebase!</title>
+
+</head>
+
+<body>
+
+  <!-- Text with spanID that gets filled with content -->
+  <p>After clicking, go to the firebase database to see the click counter go up.</p>
+  <p>
+    While clicking, put this html file to the left, and show the firebase database on the right to show how firebase is real time!
+  </p>
+
+  <!-- Text with spanID that gets filled with content -->
+  <h1>Ouch! You've clicked me <span id="clickValue"></span> times!</h1>
+
+  <!-- Button -->
+  <button id="click-button">Click Me!!!!</button>
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+  <!-- ================================================================================== -->
+
+  <!-- Firebase JavaScript Link -->
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+  <script>
+    // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBAkoxUfX-424p8B8O_Wv5yACQiBntehsE",
+    authDomain: "clicker-f6bec.firebaseapp.com",
+    databaseURL: "https://clicker-f6bec.firebaseio.com",
+    storageBucket: "clicker-f6bec.appspot.com",
+    messagingSenderId: "457645128619"
+  };
+  firebase.initializeApp(config);
+
+
+    // Variables
+    // ================================================================================
+
+    // Get a reference to the database service
+    var database = firebase.database();
+
+    // Initializing our click count at 0
+    var clickCounter = 0;
+
+    // Functions
+    // ================================================================================
+
+    // On Click
+    $("#click-button").on("click", function() {
+
+      // Add 1 to clickCounter
+      clickCounter++;
+
+      // **** Store Click Data to Firebase in a JSON property called clickCount *****
+      // **** Note how we are using the Firebase .set() method ****
+      // **** .ref() refers to the path you want to save your data to
+      // **** Since we left .ref() blank, it will save to the root directory
+      database.ref().set({
+        clickCount: clickCounter
+      });
+
+      // Now! go to https://fir-click-counter-7cdb9.firebaseio.com/ to see the impact to the DB
+    });
+
+    // MAIN PROCESS + INITIAL CODE
+  // --------------------------------------------------------------------------------
+
+  // **** Using .on("value", function(snapshot)) syntax will retrieve the data from the database (both initially and everytime something changes)
+  // This will then store the data inside the variable "snapshot". We could rename "snapshot" to anything.
+  database.ref().on("value", function(snapshot) {
+
+    // Then we console.log the value of snapshot
+    console.log(snapshot.val());
+
+    // Then we change the html associated with the number.
+    $("#clickValue").html(snapshot.val().clickCount);
+
+    // Then update the clickCounter variable with data from the database. 
+    clickCounter = snapshot.val().clickCount;
+
+  // If there is an error that Firebase runs into -- it will be stored in the "errorObject"
+  // Again we could have named errorObject anything we wanted. 
+  }, function (errorObject) {
+
+    // In case of error this will print the error
+      console.log("The read failed: " + errorObject.code);
+  
+  });
+
+  </script>
+
+</body>
+
+</html>
