@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Object</title>
+  </head>
+  <body>
+  <div id="game">
+    <h1>Open the console to see the magic!</h1>
+  </div>
+    <script>
+    var questions = {
+      q1 : ["The sky is blue.","t"],
+      q2 : ["Stegosaurus had intelligence similar to that of dolphins.","f"],
+      q3 : ["Triceratops skewered its prey with its sharp horns.","f"],
+      q4 : ["Baby dinosaurs were independent, such as small sharks are today.","f"],
+      q5 : ["Compsognathus was as big as a horse.","f"],
+      q6 : ["The Maiasaura could have lived in herds of 10,000 individuals.","t"],
+      q7 : ["Birds are descended from theropods.","t"],
+      q8 : ["A huge cyclone that lasted several years caused the extinction of dinosaurs.","f"],
+      q9 : ["Stegosaurus’ pointed plates ended with extremely venomous stings.","f"],
+      q10 : ["Diplodocids had extremely dense bones, capable of supporting their enormous weight.","f"]
+    }
+    var score = 0;
+    // document.onkeyup = function(event) {
+
+    for (var i = 1; i < 11; i++) {
+      var questionprompt = questions["q" +i][0];
+      console.log(questionprompt);
+      var userGuess = prompt(questions["q" +i][0] + "  Type t or f");
+        if (questions["q" +i][1] === userGuess){
+          score++;
+          alert("Congratz you got it right " + "Score: " + score);
+        }
+        else{
+            alert("You got it wrong.  " + "Score: " + score);
+          }
+        }
+        var html = "<p>Total score: </p>" + score;
+        document.querySelector("#game").innerHTML = html;
+    </script>
+
+  </body>
+</html>

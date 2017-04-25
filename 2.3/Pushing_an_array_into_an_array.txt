@@ -1,0 +1,4 @@
+var arrayOne = [7];
+arrayOne.push([6,7,10]);
+console.log(arrayOne);
+// Output would be [7, [6,7,10]];

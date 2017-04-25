@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Content!</title>
+</head>
+
+<body>
+    <h1>Drink Selection!</h1>
+    <hr>
+    <!-- Here we create a generic drink-options div -->
+    <div id="drink-options"></div>
+    <script type="text/javascript">
+    // Array holds all of the drinks available
+    var drinkList = [
+        "Coffee: $5",
+        "Espresso: $7",
+        "Cappuccino: $6",
+        "Latte: $4",
+        "Tea: $3",
+        "Ice Coffee: $6",
+        "Ice Espresso: $8",
+        "Ice Latte: $6",
+        "Ice Tea: $4"
+    ];
+
+    // 1. Create code that "grabs" the div with the matching id (#drink-options);
+    // ...
+    var drink - options = document.getElementById('DIV1');
+    var MyDiv2 = document.getElementById('DIV2');
+    MyDiv2.innerHTML = MyDiv1.innerHTML;
+
+    // ...
+
+
+    // 2. Create a for loop that creates HTML content of all the drinks using JavaScript.
+    // HINT: You will need to use each of the following methods: createElement, innerHTML, appendChild
+    // ...
+        
+
+        for (var i = 0; i < drinkList.length; ++i) {
+        alert('value at index [' + i + '] is: [' + drinkList[i] + ']');
+}
+
+
+function addElement() {
+        // create a new div element 
+        // and give it some content 
+        var newDiv = document.createElement("div");
+        var newContent = document.createTextNode("Hi there and greetings!");
+        newDiv.appendChild(newContent); //add the text node to the newly created div. 
+
+        
+        // add the newly created element and its content into the DOM 
+        var currentDiv = document.getElementById("div1");
+        document.body.insertBefore(newDiv, currentDiv);
+}
+        // ...
+    </script>
+</body>
+
+</html>

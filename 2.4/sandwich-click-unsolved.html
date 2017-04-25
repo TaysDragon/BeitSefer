@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trigger Clicked</title>
+    <!-- Added link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+
+<body id="sandwich">
+    <h1>Click to Eat Sandwich</h1>
+    <h3 id="pbj" onclick="myFunction()">Peanut Butter Jelly</h3>
+    <h3 id="grillcheese" onclick="myFunction()">Grilled Cheese</h3>
+    <h3 id="roastbeef" onclick="myFunction()">Roast Beef</h3>
+
+    <p>You selected sandwiches</p>
+
+    
+    <script type="text/javascript">
+    // This document.ready isn't necessary in this example... but is needed in cases where the HTML is complex.
+    // This code makes sure that the JavaScript doesn't get run until the HTML is finished loading
+    // It's useful to become familiar with now.
+
+    $(document).ready(function() {
+
+                // VARIABLES
+                // ====================================================================
+                // Here we create variables for tracking the number of sandwiches eaten
+                // ...
+                var add = (function() {
+                    var counter = 0;
+                    return function() {
+                        return counter += 1;
+                    }
+                })();
+
+                function myFunction() {
+                    document.getElementById("sandwich").innerHTML = add();
+                }
+
+                // ...
+
+                // FUNCTIONS
+                // ====================================================================
+                // Here we create various on "click" functions which capture the clicks
+                // Inside each click event is the code to create an alert, update the counter, then show the updated count.
+                // ...
+
+
+
+                object.addEventListener("click", myScript);
+
+                if click(pbj) {
+                    alert("It'll stick to the roof of your mouth");
+                }
+                if click(grillcheese) {
+                    alert('Greasy cheese for your shirt and belly');
+                }
+
+                if click(roastbeef) {
+                    alert("Moo");
+
+                    // ...;
+    </script>
+    }
+</body>
+
+</html>
