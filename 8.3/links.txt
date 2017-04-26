@@ -1,0 +1,2 @@
+Sequelize
+http://docs.sequelizejs.com/en/latest/
