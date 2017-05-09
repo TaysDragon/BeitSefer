@@ -1,0 +1,3 @@
+ db.students.find({"hobbies": "Swimming"})
+{ "_id" : ObjectId("59109a85fc32f464c90fcb00"), "row" : "2", "name" : "Stephen", "hobbies" : [ "Media Consumption", "Swimming", "Not Drinking" ] }
+{ "_id" : ObjectId("59109adefc32f464c90fcb01"), "row" : "2", "name" : "Serena", "hobbies" : [ "Cycling", "Swimming", "Rock Climbing" ] }
