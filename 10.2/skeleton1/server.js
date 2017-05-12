@@ -46,6 +46,7 @@ app.get("/", function(req, res) {
 
 // 1. Save a note to the database's collection
 // ===========================================
+        $("#makenew").on("click", function(event) {
         db.notes.save({
           title: title,
           link: link
@@ -61,7 +62,8 @@ app.get("/", function(req, res) {
             // Log the saved data
             console.log(saved);
           }
-        });
+        })
+    };
 
 
 
