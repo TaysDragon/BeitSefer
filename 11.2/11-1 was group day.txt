@@ -1,0 +1,1 @@
+An application for wholesale nurseries and gardening hobbyists to easily pull up plants from the database/inventory based on care needs and to search for plant care for plants not in their inventory.  This is also for use for employees of the information desk in plant nurseries to help them answer customer questions regarding plant care.

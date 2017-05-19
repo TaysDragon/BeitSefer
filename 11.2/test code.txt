@@ -1,0 +1,8 @@
+Instructions:
+
+Take a few moments to discuss the code with your partners.
+
+Then try to change the code a bit so it renders differently.
+
+Be sure each member of your group understands how to "test" that this code works.
+

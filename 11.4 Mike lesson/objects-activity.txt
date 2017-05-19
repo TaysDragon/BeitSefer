@@ -1,0 +1,9 @@
+Instructions
+
+Refactor the slacked-out code to use the shorthand variable declaration syntax.
+
+Likewise, re-factor the code to use ES6 object destructuring.
+
+As always, confirm that the code still works exactly like it did before you re-factored it.
+
+BONUS : Use Sets and Maps in your re-factor! And research when you would use a Set or a Map over an Object or an Array.

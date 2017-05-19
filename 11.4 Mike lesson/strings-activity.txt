@@ -1,0 +1,5 @@
+Instructions
+
+Refactor the slacked-out code to use ES6 template strings instead regular quote marks.
+
+Confirm that the code still works exactly like it did before you re-factored it.

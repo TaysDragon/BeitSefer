@@ -1,0 +1,9 @@
+Instructions:
+
+Spend the next 20 minutes taking the design provided to you and breaking it into routed child and grandchild components.
+
+As a starting point, create a basic route that flips between two panels on button click.
+
+As a bonus, nest buttons and panels inside one of these child panels. The buttons should flip between these "grandchild" panels.
+
+This may be tricky! Fight through it!

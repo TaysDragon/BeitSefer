@@ -1,0 +1,5 @@
+Instructions
+
+Refactor the code sent to you to use native array methods instead of for loops!
+
+IMPORTANT : confirm that the code still works exactly like it did before you re-factored it.

@@ -1,0 +1,5 @@
+Instructions:
+
+With your partners, discuss the code provided.
+
+Be sure to explain to one another how the component is created and rendered onto the page.

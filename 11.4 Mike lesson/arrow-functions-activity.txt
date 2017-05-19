@@ -1,0 +1,5 @@
+Instructions
+
+Replace references to function with an arrow function where applicable.
+
+Confirm that the code still works exactly like it did before you re-factored it.

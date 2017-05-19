@@ -1,0 +1,6 @@
+Instructions
+
+Replace references to var with either const or let.
+
+Confirm that the code still works exactly like it did before you re-factored it.
+

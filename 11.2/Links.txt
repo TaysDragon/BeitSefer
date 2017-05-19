@@ -1,0 +1,38 @@
+https://react-is-awesome.herokuapp.com/
+
+Add to chrome:
+React Developer Tools
+
+https://www.w3schools.com/jsref/event_onclick.asp
+
+
+https://jaketrent.com/post/test-react-componentwillreceiveprops/
+Example:
+
+var ComponentToTest = React.createClass({
+  getInitialProps() {
+    return {
+      myProp: "blank"
+    };
+  },
+  getInitialState() {
+    return {
+      modified: "still blank"
+    };
+  },
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      modified: nextProps.myProp + "IsSoModified"
+    });
+  },
+  render() {
+    return <div class="displayed">{this.state.modified}</div>
+  }
+});
+
+
+
+Jimmy Cliff
+
+
+Unhandled rejection SequelizeBaseError: ER_BAD_FIELD_ERROR: Unknown column 'id' in 'field list'

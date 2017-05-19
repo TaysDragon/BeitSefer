@@ -1,0 +1,15 @@
+Instructions:
+
+With partners, create a simple React application composed of a parent and three child components.
+
+Inside of the parent event you will create code that handles a button click. Whenever the button click is clicked, a counter will increase by one. This counter will constantly communicate the new count to the children components.
+
+The children components will then utilize the click counter and each perform a different mathematical operation with the counter.
+
+Note: You will need to do some research to solve this. Look into answering the following questions:
+
+How can I handle a button click event in React? (Hint: onClick)
+
+How can I change the state of a component in React? (Hint: setState)
+
+Note: This may be challenging! We haven't covered everything just yet. Push yourself to consult Stack Overflow and React Documentation.

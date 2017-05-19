@@ -1,0 +1,11 @@
+
+http://stackoverflow.com/questions/21029999/react-js-identifying-different-inputs-with-one-onchange-handler
+
+http://reactkungfu.com/2015/07/why-and-how-to-bind-methods-in-your-react-component-classes/
+
+https://medium.freecodecamp.com/react-binding-patterns-5-approaches-for-handling-this-92c651b5af56
+
+https://www.sitepoint.com/bind-javascripts-this-keyword-react/
+
+http://stackoverflow.com/questions/23494956/how-to-use-morgan-logger
+

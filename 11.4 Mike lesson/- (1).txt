@@ -1,0 +1,7 @@
+Instructions
+
+Refactor the slacked-out code to use the rest and spread operators
+
+Likewise, re-factor the code to use ES6 default parameters whenever possible.
+
+As always, confirm that the code still works exactly like it did before you re-factored it.
