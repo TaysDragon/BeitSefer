@@ -1,0 +1,35 @@
+
+rninit init test --source react-native@0.37.0
+
+test is the name of the folder we want to create
+
+npm WARN jest-react-native@18.0.0 requires a peer of react-native@>=0.38.0 but
+one was installed.
+To run your app on iOS:
+   cd C:\Users\Dragon\Desktop\BeitSefer\11.5 react native\test
+   react-native run-ios
+   - or -
+   Open C:\Users\Dragon\Desktop\BeitSefer\11.5 react native\test\ios\test.xcode
+roj in Xcode
+   Hit the Run button
+To run your app on Android:
+   Have an Android emulator running (quickest way to get started), or a device
+onnected
+   cd C:\Users\Dragon\Desktop\BeitSefer\11.5 react native\test
+
+
+   react-native run-android
+
+
+ PRO TIP
+  When you see Red Box with stack trace, you can click any
+  stack frame to jump to the source file. The packager will launch your
+  editor of choice. It will first look at REACT_EDITOR environment
+  variable, then at EDITOR. To set it up, you can add something like
+  export REACT_EDITOR=atom to your ~/.bashrc or ~/.zshrc depending on
+  which shell you use.
+
+
+FETCH: https://facebook.github.io/react-native/docs/network.html
+
+
