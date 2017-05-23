@@ -16,6 +16,10 @@ import Movie from './Movie';
 import Splash from './Splash';
 
 class MultipleSceneApp extends Component {
+  // The configureScene function allows us to change the animation properties of a scene
+  configureScene() {
+    return Navigator.SceneConfigs.FloatFromBottom;
+  }
 
   // Our renderScene function will choose which scene to render based on the route id
   renderScene(route, navigator) {
@@ -28,11 +32,6 @@ class MultipleSceneApp extends Component {
     else if (route.id === 3) {
       return <Splash navigator={navigator} />
     }
-  }
-
-  // The configureScene function allows us to change the animation properties of a scene
-  configureScene() {
-    return Navigator.SceneConfigs.FloatFromBottom;
   }
 
   render() {
